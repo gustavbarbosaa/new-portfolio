@@ -3,7 +3,7 @@
 <template>
   <div class="container-home h-full">
     <headerComponent />
-    <section class="home h-full px-28 pt-8">
+    <section class="home h-full px-28 pt-8" id="home">
       <div class="container-home-body flex justify-between items-center mt-8">
         <div class="text flex flex-col justify-around gap-16">
           <div class="welcome">
@@ -23,7 +23,7 @@
         </picture>
       </div>
     </section>
-    <section class="about-me h-full w-full flex flex-col items-center justify-between">
+    <section class="about-me h-full w-full flex flex-col items-center justify-between" id="about">
       <div class="header-about">
         <h1 class="text-center text-white text-4xl font-black font-mono p-8 tracking-wide">Descubra um pouco mais sobre quem sou! <br> 'Simboraaa'!</h1>
         <div class="emoji blee text-5xl bg-gray-600">
@@ -44,6 +44,34 @@
           <p>Um jovem destemido de 20 anos que chama o sertão da Paraíba de lar, mais especificamente a cidade de Cajazeiras. Com uma mente inquisitiva e coração sedento por conhecimento, sou apaixonado por tecnologia e estou sempre em busca de novas oportunidades para expandir meus horizontes.</p>
           <p>Vejo na tecnologia uma janela para o mundo, uma oportunidade de conectar-se com pessoas de diferentes culturas e absorver conhecimentos valiosos.</p>
           <p>O amor pela tecnologia transcende a busca por uma carreira promissora. Uma paixão ardente que o impulsiona a nunca parar de aprender e se reinventar. Sonhando em fazer a diferença, utilizando a tecnologia como uma ferramenta para transformar vidas e impulsionar o seu desenvolvimento.</p>
+        </div>
+      </div>
+    </section>
+    <section class="work h-full w-full flex flex-col items-center justify-between" id="work">
+      <div class="work-about">
+        <h1 class="text-center text-4xl font-black font-mono p-8 tracking-wide">Veja agora um pouco sobre minhas realizações pessoais, profissionais e acadêmicas</h1>
+      </div>
+      <div class="flex-1 grid grid-cols-3 gap-8 items-center justify-center">
+        <div class="card-experiences text-gray-800 font-semibold bg-white w-96 rounded-lg">
+          <div>
+            <img src="../assets/images/faculdade.jpg" alt="">
+            <h2 class="text-center text-xl font-bold pb-4">Faculdade Católica da Paraíba</h2>
+          </div>
+          <p>Um jovem destemido de 20 anos que chama o sertão da Paraíba de lar, mais especificamente a cidade de Cajazeiras. Com uma mente inquisitiva e coração sedento por conhecimento, sou apaixonado por tecnologia e estou sempre em busca de novas oportunidades para expandir meus horizontes.</p>
+        </div>
+        <div class="card-experiences text-gray-800 font-semibold bg-white w-96 rounded-lg">
+          <div>
+            <img src="../assets/images/work.jpg" alt="">
+            <h2 class="text-center text-xl font-bold pb-4">Netline Telecom</h2>
+          </div>
+          <p>Um jovem destemido de 20 anos que chama o sertão da Paraíba de lar, mais especificamente a cidade de Cajazeiras. Com uma mente inquisitiva e coração sedento por conhecimento, sou apaixonado por tecnologia e estou sempre em busca de novas oportunidades para expandir meus horizontes.</p>
+        </div>
+        <div class="card-experiences text-gray-800 font-semibold bg-white w-96 rounded-lg">
+          <div>
+            <img src="../assets/images/curso.jpg" alt="">
+            <h2 class="text-center text-xl font-bold pb-4">Bootcamp de Desenvolvimento Full Stack</h2>
+          </div>
+          <p>Um jovem destemido de 20 anos que chama o sertão da Paraíba de lar, mais especificamente a cidade de Cajazeiras. Com uma mente inquisitiva e coração sedento por conhecimento, sou apaixonado por tecnologia e estou sempre em busca de novas oportunidades para expandir meus horizontes.</p>
         </div>
       </div>
     </section>
@@ -86,7 +114,7 @@ export default {
   border-right: 0.15rem solid #000000b3;
   white-space: nowrap;
   letter-spacing: 0.15rem;
-  animation: text 4s steps(50) infinite;
+  animation: text 4s steps(50);
 }
 
 @keyframes text {
@@ -94,7 +122,7 @@ export default {
     width: 0;
   }
   to {
-    width: 80%;
+    width: 78%;
   }
 }
 
@@ -152,7 +180,7 @@ export default {
   }
 }
 
-.container-content-about {
+.container-content-about, .card-experiences {
   background: rgba( 255, 255, 255, 0.35 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 13.5px );

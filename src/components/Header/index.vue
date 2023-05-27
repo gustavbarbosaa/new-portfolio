@@ -9,9 +9,9 @@
     </div>
     <nav>
         <ul class="font-semibold flex gap-10">
-          <li class="hover:text-blue-400 transition-colors"><router-link to="#about-me">Sobre mim</router-link></li>
-          <li class="hover:text-blue-400 transition-colors"><router-link to="#">O que faço</router-link></li>
-          <li class="hover:text-blue-400 transition-colors"><router-link to="#">Projetos</router-link></li>
+          <li class="hover:text-blue-400 transition-colors"><a href="#about">Sobre mim</a></li>
+          <li class="hover:text-blue-400 transition-colors"><a href="#work">O que faço</a></li>
+          <li class="hover:text-blue-400 transition-colors"><a href="#">Projetos</a></li>
         </ul>
     </nav>
   </header>
